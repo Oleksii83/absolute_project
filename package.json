@@ -1,0 +1,22 @@
+{
+  "name": "absolute_project",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oleksii83/absolute_project.git"
+  },
+  "author": "Oleksii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oleksii83/absolute_project/issues"
+  },
+  "homepage": "https://github.com/Oleksii83/absolute_project#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
