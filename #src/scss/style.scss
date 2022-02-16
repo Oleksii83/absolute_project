@@ -1,21 +1,22 @@
-@mixin font($font_name, $file_name, $weight, $style) {
-  @font-face {
-    font-family: $font_name;
-    font-display: swap;
-    src: url("../fonts/#{$file_name}.woff") format("woff"),
-      url("../fonts/#{$file_name}.woff2") format("woff2");
-    font-weight: #{$weight};
-    font-style: #{$style};
-  }
-}
-
+// @mixin font($font_name, $file_name, $weight, $style) {
+//   @font-face {
+//     font-family: $font_name;
+//     font-display: swap;
+//     src: url("../fonts/#{$file_name}.woff") format("woff"),
+//       url("../fonts/#{$file_name}.woff2") format("woff2");
+//     font-weight: #{$weight};
+//     font-style: #{$style};
+//   }
+// }
+@import "./mixinFont";
 @import "./fonts.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-body {
-  font-size: 25px;
-  display: flex;
-}
+// body {
+//   font-size: 25px;
+//   display: flex;
+// }
 
-div {
-  background: url("../img/free.jpg") 0 0 no-repeat;
-}
+// div {
+//   background: url("../img/free.jpg") 0 0 no-repeat;
+// }
