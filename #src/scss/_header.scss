@@ -1,5 +1,7 @@
-$primaryBtn: #0049af;
-
+.headerMargBottom {
+  padding-top: 17px;
+  margin-bottom: 94px;
+}
 .primary {
   background-color: $primaryBtn;
 }
@@ -13,4 +15,41 @@ $primaryBtn: #0049af;
   width: 76px;
   height: 33px;
   border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navBtn {
+  // width: 163px;
+  height: 60px;
+  background: $backgroundGrey;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-right: 1px $starColor;
+  color: #202020;
+  &:hover {
+    transition: 0.2s;
+    background: $activeBtn;
+  }
+}
+
+.navBtnText {
+  color: #202020;
+
+  .navBtn:hover & {
+    transition: 0.2s;
+
+    color: #0049af;
+  }
 }
