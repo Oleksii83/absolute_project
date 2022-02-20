@@ -1,84 +1,59 @@
-<div class="container">
-  <div>
+<div class="container inputs">
+  <div class="inputs-title">
     <h1 class="text-center">Inputs</h1>
   </div>
-  <section>
-    <div>
-      <input
-        type="checkbox"
-        class="custom-checkboxActive"
-        id="happy"
-        name="happy"
-        value="yes"
-      />
-      <label class="titleCheckbox" for="happy">Checkbox Active</label>
-    </div>
-    <div>
-      <input
-        type="checkbox"
-        class="custom-checkbox"
-        id="happy"
-        name="happy"
-        value="yes"
-      />
-      <label class="titleCheckbox" for="happy">Checkbox</label>
-    </div>
-
-    //---------------------------------------------
-
-  <div class="">
+  <section class="inputs-container">
+    <div class="inputs-container-item">
+      <div class="inputs-container-block">
         <input
-          class="form-check-custom-active"
-          type="radio"
-          name="flexRadioDefault"
-          id="flexRadioDefault2"
-          checked
-        />
-        <label class="titleCheckbox" for="flexRadioDefault2"> Radio Active </label>
-      </div>
-    
-
-      <div class="">
-        <input
-          class="form-check-custom"
-          type="radio"
-          name="flexRadioDefault"
-          id="flexRadioDefault2"
-          checked
-        />
-        <label class="titleCheckbox" for="flexRadioDefault2"> Radio </label>
-      </div>
-    </div>
-
-    //---------------------------------------------
-    <div>
-      <div class="form-check form-switch">
-        <input
-          class="form-check-input"
           type="checkbox"
-          id="flexSwitchCheckDefault"
+          class="custom-checkboxActive"
+          id="check"
+          name="check"
+          value=""
         />
-        <label class="form-check-label" for="flexSwitchCheckDefault"
-          >Поле флажок переключатель по умолчанию</label
+        <label class="titleCheckbox" for="happy">Checkbox Active</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          class="custom-checkbox"
+          id="happy"
+          name="happy"
+          value="yes"
+        />
+        <label class="titleCheckbox" for="happy">Checkbox</label>
+      </div>
+    </div>
+
+    <div class="inputs-container-item">
+      <div class="radio inputs-container-block">
+        <input id="radio-1" name="radio" type="radio" checked />
+        <label for="radio-1" class="radio-label titleCheckbox"
+          >Radio Active</label
         >
       </div>
-      <div class="form-check form-switch">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          id="flexSwitchCheckChecked"
-          checked
-        />
-        <label class="form-check-label" for="flexSwitchCheckChecked"
-          >Выбранное поле флажок переключатель</label
-        >
+
+      <div class="radio">
+        <input id="radio-2" name="radio" type="radio" />
+        <label for="radio-2" class="radio-label titleCheckbox">Radio</label>
+      </div>
+    </div>
+    <div>
+      <div class="inputs-container-block">
+        <label class="switch">
+          <input type="checkbox" checked />
+          <span class="slider round"></span>
+        </label>
+        <span class="titleCheckbox inputs-text-switcher">Switcher ON</span>
+      </div>
+      <div>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <span class="titleCheckbox inputs-text-switcher">Switcher OFF</span>
       </div>
     </div>
   </section>
-</div>
-
-//-----------------------------
-<div class="toggle">
-  <input type="checkbox" id="temp">
-  <label for="temp">Toggle Switch</label>
 </div>

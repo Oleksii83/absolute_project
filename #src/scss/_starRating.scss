@@ -1,0 +1,142 @@
+.star-section {
+  margin-bottom: 93px;
+}
+.star-title {
+  margin-bottom: 36px;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.simple-rating {
+  position: relative;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.simple-rating::before {
+  content: "☆☆☆☆☆";
+
+  display: block;
+}
+
+.simple-rating-items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.simple-rating-item {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.simple-rating-label {
+  flex: 0 0 20%;
+  height: 100%;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.simple-rating-label::before {
+  content: "★";
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.simple-rating-label:hover,
+.simple-rating-label:checked ~ .simple-rating-label:hover {
+  color: $starColor;
+}
+
+.simple-rating-item:checked,
+.simple-rating-item:checked ~ .simple-rating-label {
+  color: $starColor;
+}
+.simple-rating-text {
+  margin-left: 17px;
+  font-family: Open Sans;
+
+  font-size: 15px;
+  line-height: 20px;
+  color: #5e5d5c;
+}
+
+//  Рейтинг в %
+
+.rating-block {
+  display: flex;
+}
+
+.star-rating {
+}
+
+.rating {
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+  line-height: 0.75;
+}
+
+.rating-body {
+  position: relative;
+}
+
+.rating-body::before {
+  content: "☆☆☆☆☆";
+  display: block;
+  color: $starColor;
+}
+
+.rating-active {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  &::before {
+    content: "★★★★★";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: $starColor;
+  }
+}
+
+.rating-items {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.rating-item {
+  flex: 0 0 20%;
+  height: 100%;
+  opacity: 0;
+}
+
+// .ratting-value {
+//   font-size: 50%;
+//   line-height: 1;
+//   padding: 0px 0px 0px 10px;
+// }
