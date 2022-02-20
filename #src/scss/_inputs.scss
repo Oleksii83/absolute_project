@@ -118,9 +118,6 @@ $color1: #ffffff;
 $color2: #2fa4e7;
 
 body {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   min-height: 100vh;
 }
 
@@ -173,7 +170,6 @@ body {
     }
   }
 }
-//-----------------------------------
 
 .switch {
   position: relative;
@@ -182,12 +178,10 @@ body {
   height: 20px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   display: none;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -226,7 +220,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 9px;
 }
