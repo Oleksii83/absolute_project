@@ -38,6 +38,8 @@
   flex-wrap: wrap;
   border-right: 1px $starColor;
   color: #202020;
+
+  &:focus,
   &:hover {
     transition: 0.2s;
     background: $activeBtn;
@@ -47,7 +49,8 @@
 .navBtnText {
   color: #202020;
 
-  .navBtn:hover & {
+  .navBtn:hover &,
+  .navBtn:focus & {
     transition: 0.2s;
 
     color: #0049af;
