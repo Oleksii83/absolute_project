@@ -1,5 +1,159 @@
 .caroussel-section {
-  width: 600px;
-  height: 300px;
-  margin-bottom: 455px;
+  margin-bottom: 116px;
+}
+
+.carousel-title {
+  margin-bottom: 45px;
+}
+
+.carousel-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-left: 55px;
+  padding-right: 43px;
+
+  height: 270px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.img-text-container {
+  padding-left: 65px;
+  padding-top: 44px;
+}
+
+.img-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+
+  color: #808080;
+}
+
+.image-slider-chewbacca {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: url(../img/Chewbacca.jpg);
+}
+
+.image-slider-vader {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+
+  background: url(../img/VaderBig.jpg);
+}
+
+.image-slider-yoda {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+
+  background: url(../img/YodaBig.jpg);
+}
+
+.image-slider-r2d2 {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+
+  background: url(../img/r2d2Big.jpg);
+}
+
+.carousel-control-prev {
+  position: relative;
+}
+.carousel-control-next {
+  position: relative;
+}
+
+.btn-arrow-left {
+  width: 42px;
+  height: 42px;
+  margin-right: 18px;
+  background-color: $backgroundWhite;
+  border: 1px solid #dadada;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $primaryBtn;
+    fill: $primaryBtn;
+  }
+}
+
+.btn-arrow-right {
+  width: 42px;
+  height: 42px;
+  margin-left: 18px;
+  color: #5d5d5d;
+  fill: #5d5d5d;
+  background-color: $backgroundWhite;
+  border: 1px solid #dadada;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $primaryBtn;
+    fill: $primaryBtn;
+  }
+}
+
+.arrow-right-svg:hover {
+  fill: $primaryBtn;
+}
+
+.arrow {
+  fill: $primaryBtn;
+}
+
+.mini-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mini-icon-Chubaka {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: url(../img/ChewbaccaMini.jpg);
+}
+
+.mini-icon-shreder {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: url(../img/shreder.jpg);
+}
+
+.mini-icon-yodo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: url(../img/Yoda.jpg);
+}
+
+.mini-icon-r2d2 {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: url(../img/r2d2.jpg);
+}
+
+.carousel-indicators [data-bs-target] {
+  margin-right: 60px;
+}
+
+.carousel-indicators {
+  position: relative;
+  align-items: baseline;
 }
