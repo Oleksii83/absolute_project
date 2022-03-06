@@ -1,69 +1,176 @@
-<header class="headerMargBottom">
-  <!-- <header class="headerMargBottom sticky-top"></header> -->
-  <nav class="navbar navbar-light flex-column max-width pb-3">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./img/Group.svg" alt="" width="242" height="61" />
-      </a>
+<div class="container sticky-top">
+  <header class="header">
+    <div class="header-menu-item">
+      <div class="">
+        <button
+          class="menu-btn text-center"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#multiCollapseExample2"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample2"
+        >
+          <svg
+            class="menu collapse show"
+            id="multiCollapseExample2"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+          <svg
+            class="search-icon collapse close-icon bi bi-x"
+            id="multiCollapseExample2"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header-brand-item">
+      <div class="block">
+        <a class="navbar-brand" href="#">
+          <img class="brand-icon" src="./img/Group.svg" alt="" />
+        </a>
+      </div>
+    </div>
+    <div class="header-search-item search-item">
+      <button
+        class="header-search-btn"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#multiCollapseExample1"
+        aria-expanded="false"
+        aria-controls="multiCollapseExample1"
+      >
+        <svg
+          class="search-icon collapse show"
+          id="multiCollapseExample1"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-search"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+          />
+        </svg>
+        <svg
+          class="search-icon collapse close-icon"
+          id="multiCollapseExample1"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          class="bi bi-x"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="input-form-tablet">
       <form class="d-flex">
         <input
-          class="form-control inputSearch mb-3"
+          class="form-control input-search"
           type="search"
+          `
           placeholder="Search"
           aria-label="Search"
         />
-        <button
-          class="btn btn-primary primary searchBtn inputSearch"
-          type="submit"
-        >
+        <button class="btn btn-primary primary search-btn" type="submit">
           <img src="./img/search.svg" alt="" width="16" height="16" />
         </button>
       </form>
     </div>
-  </nav>
-  <nav
-    class="navbar navbar-expand-lg navbar-light bg-light"
-    style="height: 60px"
-  >
-    <div class="container">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Переключатель навигации"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse row" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <ul class="navbar-nav col">
-            <li class="navBtn border-end border-start col">
-              <a class="navBtnText" href="#">HOME</a>
-            </li>
-            <li class="navBtn border-end col">
-              <a class="navBtnText" href="#">SERVICES</a>
-            </li>
-            <li class="navBtn border-end col">
-              <a class="navBtnText" href="#">PORTFOLIO</a>
-            </li>
-            <li class="navBtn border-end col">
-              <a class="navBtnText" href="#">GALLERY</a>
-            </li>
-            <li class="navBtn border-end col">
-              <a class="navBtnText" href="#">HELP & FAQ</a>
-            </li>
-            <li class="navBtn border-end col">
-              <a class="navBtnText" href="#">ABOUT</a>
-            </li>
-            <li class="navBtn border-end col">
-              <a class="navBtnText" href="#">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+  </header>
+</div>
+
+<div></div>
+<div class="collapse multi-collapse" id="multiCollapseExample1">
+  <div class="card card-body">
+    <div class="">
+      <form class="d-flex">
+        <input
+          class="form-control input-search"
+          type="search"
+          `
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn-primary primary btn-input-search" type="submit">
+          <img src="./img/search.svg" alt="" width="16" height="16" />
+        </button>
+      </form>
     </div>
-  </nav>
-</header>
+  </div>
+</div>
+
+<div class="col">
+  <div class="collapse multi-collapse" id="multiCollapseExample2">
+    <div class="">
+      <ul class="navbar-nav col">
+        <li class="navBtn border-end border-start container">
+          <a class="navBtnText" href="#">HOME</a>
+        </li>
+        <li class="navBtn border-end container">
+          <a class="navBtnText" href="#">SERVICES</a>
+        </li>
+        <li class="navBtn border-end container">
+          <a class="navBtnText" href="#">PORTFOLIO</a>
+        </li>
+        <li class="navBtn border-end container">
+          <a class="navBtnText" href="#">GALLERY</a>
+        </li>
+        <li class="navBtn border-end container">
+          <a class="navBtnText" href="#">HELP & FAQ</a>
+        </li>
+        <li class="navBtn border-end container">
+          <a class="navBtnText" href="#">ABOUT</a>
+        </li>
+        <li class="navBtn border-end container">
+          <a class="navBtnText" href="#">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="header-navbar-desktop">
+  <ul class="navbar-nav">
+    <li class="navBtn border-end border-start">
+      <a class="navBtnText" href="#">HOME</a>
+    </li>
+    <li class="navBtn border-end">
+      <a class="navBtnText" href="#">SERVICES</a>
+    </li>
+    <li class="navBtn border-end">
+      <a class="navBtnText" href="#">PORTFOLIO</a>
+    </li>
+    <li class="navBtn border-end">
+      <a class="navBtnText" href="#">GALLERY</a>
+    </li>
+    <li class="navBtn border-end">
+      <a class="navBtnText" href="#">HELP & FAQ</a>
+    </li>
+    <li class="navBtn border-end">
+      <a class="navBtnText" href="#">ABOUT</a>
+    </li>
+    <li class="navBtn border-end">
+      <a class="navBtnText" href="#">CONTACT</a>
+    </li>
+  </ul>
+</div>

@@ -14,22 +14,23 @@
 
 .img-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
   align-items: center;
-  padding-left: 55px;
-  padding-right: 43px;
 
-  height: 270px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 
 .img-text-container {
-  padding-left: 65px;
-  padding-top: 44px;
+  padding-left: 15px;
+  padding-top: 20px;
 }
 
 .img-text {
+  display: none;
+}
+
+.img-text-mob {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -39,34 +40,33 @@
 }
 
 .image-slider-chewbacca {
-  width: 270px;
-  height: 270px;
+  width: 195px;
+  height: 195px;
+  text-align: center;
   border-radius: 50%;
-  background: url(../img/Chewbacca.jpg);
+  max-width: none;
+  // background: url(../img/Chewbacca.jpg);
 }
 
 .image-slider-vader {
-  width: 270px;
-  height: 270px;
+  width: 195px;
+  height: 195px;
   border-radius: 50%;
-
-  background: url(../img/VaderBig.jpg);
+  max-width: none;
 }
 
 .image-slider-yoda {
-  width: 270px;
-  height: 270px;
+  width: 195px;
+  height: 195px;
   border-radius: 50%;
-
-  background: url(../img/YodaBig.jpg);
+  max-width: none;
 }
 
 .image-slider-r2d2 {
-  width: 270px;
-  height: 270px;
+  width: 195px;
+  height: 195px;
   border-radius: 50%;
-
-  background: url(../img/r2d2Big.jpg);
+  max-width: none;
 }
 
 .carousel-control-prev {
@@ -122,38 +122,199 @@
 }
 
 .mini-icon-Chubaka {
-  width: 75px;
-  height: 75px;
+  width: 63px;
+  height: 63px;
   border-radius: 50%;
   background: url(../img/ChewbaccaMini.jpg);
+  bbackground-size: cover;
 }
 
 .mini-icon-shreder {
-  width: 75px;
-  height: 75px;
+  width: 63px;
+  height: 63px;
   border-radius: 50%;
-  background: url(../img/shreder.jpg);
+  background-image: url(../img/shreder.jpg);
+  background-size: cover;
 }
 
 .mini-icon-yodo {
-  width: 75px;
-  height: 75px;
+  width: 63px;
+  height: 63px;
   border-radius: 50%;
   background: url(../img/Yoda.jpg);
+  background-size: cover;
 }
 
 .mini-icon-r2d2 {
-  width: 75px;
-  height: 75px;
+  width: 63px;
+  height: 63px;
   border-radius: 50%;
   background: url(../img/r2d2.jpg);
-}
-
-.carousel-indicators [data-bs-target] {
-  margin-right: 60px;
+  background-size: cover;
 }
 
 .carousel-indicators {
   position: relative;
   align-items: baseline;
+}
+// ---------------------------------
+
+@media screen and (max-width: 767px) {
+  .img-container {
+    height: 395px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-left: 23px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    width: 620px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .btn-arrow-left,
+  .btn-arrow-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .carousel-indicators [data-bs-target] {
+    margin-right: 60px;
+    width: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .caroussel-section {
+    margin-bottom: 116px;
+  }
+
+  .carousel-title {
+    margin-bottom: 45px;
+  }
+
+  .carousel-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-left: 55px;
+    padding-right: 43px;
+
+    height: 270px;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+  }
+
+  .img-text-container {
+    padding-left: 65px;
+
+    padding-top: 44px;
+  }
+
+  .img-text-mob {
+    display: none;
+  }
+
+  .img-text {
+    display: contents;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+
+    color: #808080;
+  }
+
+  .image-slider-chewbacca {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    max-width: none;
+  }
+
+  .image-slider-vader {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    max-width: none;
+  }
+
+  .image-slider-yoda {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    max-width: none;
+  }
+
+  .image-slider-r2d2 {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    max-width: none;
+  }
+
+  .arrow-right-svg:hover {
+    fill: $primaryBtn;
+  }
+
+  .arrow {
+    fill: $primaryBtn;
+  }
+
+  .mini-icon-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mini-icon-Chubaka {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: url(../img/ChewbaccaMini.jpg);
+  }
+
+  .mini-icon-shreder {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: url(../img/shreder.jpg);
+  }
+
+  .mini-icon-yodo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: url(../img/Yoda.jpg);
+  }
+
+  .mini-icon-r2d2 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: url(../img/r2d2.jpg);
+  }
+
+  .carousel-indicators [data-bs-target] {
+    margin-right: 60px;
+  }
+
+  .carousel-indicators {
+    position: relative;
+    align-items: baseline;
+  }
 }

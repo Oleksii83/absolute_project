@@ -1,16 +1,10 @@
 .star-section {
-  margin-bottom: 93px;
+  margin-bottom: 53px;
 }
 .star-title {
   margin-bottom: 36px;
 }
 
-.star-rating {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-}
 .simple-rating {
   position: relative;
   font-size: 20px;
@@ -67,7 +61,7 @@
   color: $starColor;
 }
 .simple-rating-text {
-  margin-left: 17px;
+  margin-left: 22px;
   font-family: Open Sans;
 
   font-size: 15px;
@@ -79,9 +73,6 @@
 
 .rating-block {
   display: flex;
-}
-
-.star-rating {
 }
 
 .rating {
@@ -133,4 +124,21 @@
   flex: 0 0 20%;
   height: 100%;
   opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .star-section {
+    margin-bottom: 93px;
+  }
+
+  .star-rating {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .simple-rating-text {
+    margin-left: 17px;
+  }
 }

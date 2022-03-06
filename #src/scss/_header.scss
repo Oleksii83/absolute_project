@@ -1,43 +1,79 @@
 header {
+  background-color: $backgroundWhite;
+}
+
+.header {
+  height: 66px;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid 1px $backgroundGrey;
+}
+
+.block {
+}
+.menu {
+  width: 23px;
+  height: 20px;
+  fill: $primaryBtn;
+}
+.menu-btn {
+  border: none;
   background-color: #fff;
 }
-.headerMargBottom {
-  padding-top: 17px;
-  margin-bottom: 94px;
+
+.brand-icon {
+  width: 173px;
+  height: 43px;
 }
-.primary {
-  background-color: $primaryBtn;
+.search-item {
+  padding-left: 0px;
+}
+.header-search-btn {
+  border: none;
+  background-color: #fff;
 }
 
-.inputSearch {
-  width: 291px;
-  height: 33px;
+.search-icon {
+  width: 24px;
+  height: 24px;
+  fill: $primaryBtn;
 }
 
-.searchBtn {
-  width: 76px;
-  height: 33px;
-  border-radius: 2px;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
+.card {
+  border: none;
+  background-color: rgb(244, 245, 247);
+  height: 55px;
   justify-content: center;
-  flex-wrap: wrap;
+}
+
+.input-search {
+  height: 35px;
+}
+
+.btn-input-search {
+  width: 75px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
 }
 
 .navBtn {
-  // width: 163px;
-  height: 60px;
+
   background: $backgroundGrey;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 10px;
+  margin-bottom: 2px;
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: center;
+
   flex-wrap: wrap;
   border-right: 1px $starColor;
   color: #202020;
@@ -57,5 +93,131 @@ header {
     transition: 0.2s;
 
     color: #0049af;
+  }
+}
+.close-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.input-form-tablet {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 750px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 100px;
+  }
+  .close-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .header-search-item {
+    display: none;
+  }
+
+  .input-form-tablet {
+    display: contents;
+  }
+
+  .input-search {
+    width: 290px;
+    height: 35px;
+  }
+
+  .search-btn {
+    width: 76px;
+    height: 35px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navBtn {
+    height: 45px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 1150px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-navbar-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-menu-item {
+    display: none;
+  }
+
+  .headerMargBottom {
+    padding-top: 17px;
+    margin-bottom: 94px;
+  }
+  .primary {
+    background-color: $primaryBtn;
+  }
+
+  .input-search {
+    width: 291px;
+    height: 33px;
+  }
+
+  .header-navbar-desktop {
+    background-color: $backgroundGrey;
+    margin-bottom: 93px;
+  }
+
+  .navBtn {
+    width: 163px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navBtnText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .btnContainer {
+    display: flex;
+    justify-content: center;
   }
 }

@@ -1,17 +1,9 @@
 .blockBtn {
-  margin-bottom: 94px;
+  margin-bottom: 50px;
+  margin-top: 75px;
 }
 .titleBtn {
   margin-bottom: 36px;
-}
-
-.btnContainer {
-  display: flex;
-  justify-content: center;
-
-  &:nth-child(n) {
-    margin-right: 20px;
-  }
 }
 
 .btnTextWhite {
@@ -70,4 +62,30 @@
   padding: 14px 17px;
   background-color: $dangerBtn;
   border-radius: 2px;
+}
+@media screen and (max-width: 763px) {
+  .btn {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blockBtn {
+    margin-bottom: 80px;
+    margin-top: 67px;
+  }
+  .btn {
+    margin-right: 20px;
+    &:nth-last-child(1) {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blockBtn {
+    margin-bottom: 94px;
+    margin-top: 94px;
+  }
 }
