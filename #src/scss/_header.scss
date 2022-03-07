@@ -12,8 +12,6 @@ header {
   border-bottom: solid 1px $backgroundGrey;
 }
 
-.block {
-}
 .menu {
   width: 23px;
   height: 20px;
@@ -63,8 +61,8 @@ header {
 }
 
 .navBtn {
-
   background: $backgroundGrey;
+  height: 35px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
